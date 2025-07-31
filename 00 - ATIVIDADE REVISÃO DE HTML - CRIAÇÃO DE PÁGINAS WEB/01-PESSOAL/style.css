@@ -1,0 +1,176 @@
+/* Tema: Roxo (principal) e amarelo (destaques) */
+
+body {
+    background: #f6f3ff;
+    color: #4b006e;
+    font-size: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: linear-gradient(90deg, #7c3aed 60%, #ffe066 100%);
+    padding: 24px 0 16px 0;
+    margin-bottom: 24px;
+    border-bottom: 4px solid #ffe066;
+}
+
+button {
+    background: #181025;
+    color: #ffe066;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: background 0.2s, color 0.2s;
+}
+button:hover {
+    background: #4b006e;
+    color: #fffbe6;
+}
+
+.titulo {
+    text-align: center;
+    color: #7c3aed;
+    border: 3px solid #ffe066;
+    border-radius: 16px;
+    background: #fffbe6;
+    margin: 32px 10% 24px 10%;
+    padding: 16px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 16px rgba(124, 58, 237, 0.08);
+}
+
+h1, h2, h3 {
+    color: #7c3aed;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    border-left: 6px solid #ffe066;
+    padding-left: 12px;
+    background: #f8f4ff;
+    border-radius: 6px;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #ffe066;
+    text-shadow: 1px 1px 2px #7c3aed;
+    font-size: 1.5rem;
+}
+
+.perfil {
+    float: right;
+    margin-left: 32px;
+    margin-bottom: 24px;
+    max-width: 260px;
+    border-radius: 18px;
+    border: 3px solid #7c3aed;
+    box-shadow: 0 2px 12px rgba(124, 58, 237, 0.10);
+    background: #fffbe6;
+}
+
+.card, .tema, .tags, .text {
+    background: #f8f4ff;
+    border: 2px solid #7c3aed;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(137, 43, 226, 0.08);
+    padding: 24px;
+    margin: 24px auto;
+    max-width: 700px;
+    color: #4b006e;
+    font-size: 18px;
+}
+
+ol, ul {
+    background: #fffbe6;
+    border-radius: 12px;
+    padding: 18px 32px;
+    border-left: 4px solid #ffe066;
+    margin-bottom: 24px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #4b006e;
+    font-size: 1.1em;
+}
+
+strong {
+    color: #7c3aed;
+    background: #ffe066;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Decoração para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 32px 0 24px 0;
+    background: #fffbe6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(124, 58, 237, 0.10);
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+th {
+    background: linear-gradient(90deg, #7c3aed 80%);
+    color: #fffbe6;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #ffe066;
+}
+
+tr:nth-child(even) td {
+    background: #f8f4ff;
+}
+
+tr:nth-child(odd) td {
+    background: #fffbe6;
+}
+
+td {
+    border-bottom: 1px solid #e0d7fa;
+    color: #4b006e;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 700px) {
+    .perfil {
+        float: none;
+        display: block;
+        margin: 0 auto 24px auto;
+        max-width: 90vw;
+    }
+    .titulo, .card, .tema, .tags, .text {
+        margin: 16px 2vw;
+        padding: 12px;
+    }
+}
