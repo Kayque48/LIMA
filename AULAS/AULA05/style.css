@@ -1,0 +1,51 @@
+@charset "UFT-8";
+/* Problemas com acentuação */
+
+/* Importação de fonte de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Ink&display=swap');
+
+@font-face {
+    font-family: 'korean';
+    src: url('KirangHaerang-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'japan';
+    src: url('ZCOOL_KuaiLe/ZCOOLKuaiLe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10px;
+}
+
+
+h2 {
+    color: brown;
+    font-size: 10em;
+}
+
+p {
+    font-family: 'korean', Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p {
+    font: italic bold 1em, koren, Helvetica, sans-serif;
+}
+
+body {
+    /* background-color: linear-gradient(90deg, yellow, red); */
+    color: black;
+    background-image: radial-gradient(circle, rgb(0, 149, 255), rgb(58, 2, 130), rgb(71, 1, 67));
+    font-family: "Blaka Ink";
+    font-family: 'japan';
+}
+
+.blaka-ink-regular {
+  font-family: "Blaka Ink", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
