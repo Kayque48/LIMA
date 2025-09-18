@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página em Desenvolvimento</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #121212;
+        color: #fcfc02;
+        font-family: "Dancing Script", cursive;
+        text-align: center;
+        flex-direction: column;
+        }
+
+        h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        }
+
+        p {
+        font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+  <h1>🚧 Em Desenvolvimento 🚧</h1>
+  <p>Você será redirecionado em 5 segundos...</p>
+
+  <script>
+    setTimeout(() => {
+      window.history.back(); // retorna para a página anterior
+    }, 5000); // 5000ms = 5s
+  </script>
+</body>
+</html>
